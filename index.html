@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let multiTable = "<table border='1'      width='1000' cellspacing='0' cellpadding='3'>"
+    for (i = 1; i <= 9; i++) {
+        multiTable = multiTable + "<tr>";
+        for (j = 2; j <= 8; j++){
+            multiTable = multiTable + "<td>"+ j + "x" + i + '=' + i*j + "</td>";
+        }
+        multiTable = multiTable + "</tr>";
+    }
+    multiTable = multiTable + "</table>";
+    document.write(multiTable);
+</script>
+</body>
+</html>
